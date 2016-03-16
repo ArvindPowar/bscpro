@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatchUpViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="IIw-nA-fsA" id="My4-TO-nGd"/>
+                <outlet property="datepicker" destination="cx4-6m-Ie4" id="btL-en-4TI"/>
+                <outlet property="scrollView" destination="Yqy-dc-rpR" id="iLN-PR-P01"/>
+                <outlet property="timepicker" destination="FIo-ov-3OX" id="E2Q-rB-za6"/>
+                <outlet property="userlistTableView" destination="awj-ML-A5s" id="13t-Rx-tqc"/>
+                <outlet property="view" destination="iN0-l3-epB" id="8IW-MR-ad7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yqy-dc-rpR">
+                    <rect key="frame" x="0.0" y="3" width="768" height="1024"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="awj-ML-A5s">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="sYN-57-82P"/>
+                                <outlet property="delegate" destination="-1" id="bFG-P5-P2O"/>
+                            </connections>
+                        </tableView>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IIw-nA-fsA">
+                            <rect key="frame" x="468" y="294" width="37" height="37"/>
+                        </activityIndicatorView>
+                        <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="cx4-6m-Ie4">
+                            <rect key="frame" x="0.0" y="678" width="768" height="216"/>
+                            <date key="date" timeIntervalSinceReferenceDate="474793030.12432098">
+                                <!--2016-01-18 06:57:10 +0000-->
+                            </date>
+                        </datePicker>
+                        <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="FIo-ov-3OX">
+                            <rect key="frame" x="0.0" y="678" width="768" height="216"/>
+                            <date key="date" timeIntervalSinceReferenceDate="474797485.17919302">
+                                <!--2016-01-18 08:11:25 +0000-->
+                            </date>
+                        </datePicker>
+                    </subviews>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="q0l-y6-GBB"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+        </view>
+    </objects>
+</document>
